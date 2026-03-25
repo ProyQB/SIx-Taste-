@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #e67e22; /* Warm foodie orange */
+    --dark-color: #2c3e50;
+    --light-bg: #f9f9f9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.container { width: 85%; margin: auto; overflow: hidden; padding: 40px 0; }
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--dark-color); font-weight: 500; }
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Forms */
+.booking-form {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-group label { display: block; margin-bottom: 5px; }
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background: var(--dark-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover { background: var(--primary-color); }
+
+.hidden { display: none; margin-top: 20px; padding: 15px; border-radius: 5px; background: #d4edda; color: #155724; }
