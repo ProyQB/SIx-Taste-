@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Taste Food Tours | LA's #1 Family-Owned Culinary Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SIX TASTE</div>
+        <ul class="nav-links">
+            <li><a href="#about">Our Family</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Taste the Heart of Los Angeles</h1>
+            <p>USA Today's Top 3 Food Tour in America</p>
+            <a href="#booking" class="btn">Explore Our Tours</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Our Family, Your Guide</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>A Local Legacy Since 2009</h3>
+                    <p>As LA's only family-owned food tour company, we don't just show you restaurants; we introduce you to our neighbors. From the best pupusas in town to hidden donut gems, our family works tirelessly to support local vendors and share the rich history of SoCal.</p>
+                    <p><strong>Meet the Team:</strong> Our owners and guides are passionate locals dedicated to making sure you leave full and happy.</p>
+                </div>
+                <div class="about-images">
+                    <div class="image-placeholder">Family Business & Team Photo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Book Your Experience</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label>Service Type</label>
+                    <select id="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="walking-tour">Walking Food Tour</option>
+                        <option value="catering">Event Catering</option>
+                        <option value="teambuilding">Corporate Teambuilding</option>
+                        <option value="private">Private Group Tour</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Guest Count</label>
+                    <input type="number" id="guests" min="1" placeholder="Number of people" required>
+                </div>
+                <button type="submit" class="btn-submit">Check Availability</button>
+            </form>
+            <div id="formFeedback" class="hidden"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
